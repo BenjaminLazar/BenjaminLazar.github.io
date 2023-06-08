@@ -1,0 +1,29 @@
+{
+	"analyticsData": {
+		"testSlide": {
+			"id": "testSlide",
+			"description": "testSlide description",
+			"type": "slide"
+		},
+		"testPopup1": {
+			"id": "testPopup 1 id",
+			"description": "testPopup 1 description",
+			"type": "popup"
+		},
+		"testPopup2": {
+			"id": "testPopup 2 id",
+			"description": "testPopup 2 description",
+			"type": "popup"
+		},
+		"testCustom": {
+			"id": "testCustom ID",
+			"description": "testCustom 1 description",
+			"type": "custom"
+		},
+		"testInsight": {
+			"id": "testInsight ID",
+			"description": "testInsight description",
+			"type": "insight"
+		}
+	}
+}

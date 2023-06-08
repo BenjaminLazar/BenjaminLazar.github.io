@@ -1,0 +1,52 @@
+.act-hidden,
+.act-hidden table p {
+    display: none;
+}
+.act-hidden table {
+	mso-hide:all;
+}
+
+@media only screen and (max-width: 480px) {
+    .mj-section-base :not(.mj-group-base) > .mj-column-base {
+        width: 100% !important;
+    }
+
+    .act-mob-hidden,
+    .data-mo-hidden-on-375 {
+        display: none !important;
+    }
+}
+
+@media only screen and (min-width: 480px) {
+    .data-mo-hidden-on-1280 {
+        display: none !important;
+    }
+}
+
+body, div, ul, ol, li,
+h1, h2, h3, h4, h5, h6,
+p, th {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+td {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4 {
+    font-size: 100%;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    margin: 0 !important;
+}
+
+sup {
+    font-size: 66%;
+    line-height: 1;
+    vertical-align: top;
+    mso-text-raise: 30%;
+}

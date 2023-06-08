@@ -1,0 +1,26 @@
+{
+	"shared/pdfs/Kim_2013.pdf": {
+		"title": "Kim C.K., Jung S., Yoon B-W. Practical issues to prevent stroke associated with non-valvular atrial fibrillation. <i>J Stroke</i> 2013;15(3):144–52.",
+		"referenceId": "KimCK:2013ta"
+	},
+	"shared/pdfs/Fox_2011.pdf": {
+		"title": "Fox K.A.A., Piccini J.P., Wojdyla D. <i>et al.</i> Prevention of stroke and systemic embolism with rivaroxaban compared with warfarin in patients with non-valvular atrial fibrillation and moderate renal impairment. <i>Eur Heart J.</i> 2011;32:2387–94.",
+		"link": "",
+		"referenceId": "Fox:2011ef"
+	},
+	"shared/pdfs/Hohnloser 2012 apixaban.pdf": {
+		"title": "Hohnloser S.H., Hijazi Z., Thomas L. <i>et al.</i> Efficacy of apixaban when compared with warfarin in relation to renal function in patients with atrial fibrillation: insights from the ARISTOTLE trial. <i>Eur Heart J.</i> 2012;33(22):2821–30.",
+		"link": "shared/pdfs/Hohnloser 2012 apixaban.pdf",
+		"referenceId": "Hohnloser:2012hw"
+	},
+	"shared/pdfs/Fox_20wqwqw11.pdf": {
+		"title": "Hijazi Z., Hohnloser S.H., Oldgren J. <i>et al.</i> Efficacy and safety of dabigatran compared with warfarin in relation to baseline renal function in patients with atrial fibrillation: a RE-LY (Randomized Evaluation of Long-term Anticoagulation Therapy) trial analysis. <i>Circulation</i> 2014;129(9):961–70.",
+		"link": "shared/pdfs/Fox_20wqwqw11.pdf",
+		"referenceId": "Hijazi:2014fc"
+	},
+	"shared/pdfs/Fox1222_2011.pdf": {
+		"title": "Prevention of stroke and systemic embolism with rivaroxaban compared with warfarin in patients with non-valvular atrial fibrillation and moderate renal impairment. <i>Eur Heart J.</i> 2011;32:2387–94.",
+		"link": "",
+		"referenceId": "Fox:2011ef"
+	}
+}

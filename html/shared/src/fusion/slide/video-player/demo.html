@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Component Demo</title>
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+  <link href="../../../../dist/main.css" rel="stylesheet"> <!-- load the webcomponents loader, which injects the necessary polyfill bundle -->
+  <script src="../../../../lib/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
+</head>
+
+<body> <fusion-video-player id="demo" src="../../../../assets/videos/intro.mp4" width="1024px" height="768px" content-width="400px" content-height="200px" backdrop-color="rgba(0, 0, 0, 0.5)" background-color="rgba(230, 0, 0, 1)" border-width="10px" border-style="solid" border-color="rgba(255, 200, 0, 1)" border-radius="50px"> </fusion-video-player>
+  <script src="../../../../dist/main.js"></script>
+  <script>
+    Fusion.toggleState('videoPopup-demo');
+  </script>
+</body>
+
+</html>

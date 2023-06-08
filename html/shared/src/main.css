@@ -1,0 +1,5 @@
+@import "./fusion/_vendor/anijs-animations.css";
+@import "./fusion/base.css";
+
+/* Import custom stylesheets from './styles' folder to include in build */
+@import "./styles/typography.css";

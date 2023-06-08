@@ -1,0 +1,21 @@
+{
+  "id": "108854",
+  "major": "0",
+  "minor": "7",
+  "isSharedResource": false,
+  "shared": {
+    "id": "102486",
+    "major_version_number__v": 0,
+    "minor_version_number__v": 9,
+    "name__v": "Remepan Design System (2.3.3) - Demos",
+    "product__v": [
+      "00P000000006001"
+    ],
+    "country__v": [
+      "00C000000000651"
+    ],
+    "language__v": [
+      "English"
+    ]
+  }
+}

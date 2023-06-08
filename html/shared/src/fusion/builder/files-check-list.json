@@ -1,0 +1,52 @@
+{
+  "ignored": [
+    "*.html",
+    "*.json",
+    "src/fusion/builder/*",
+    "src/store.js"
+  ],
+  "changed": [
+    "lib/package.js",
+    "postcss.config.js",
+    "src/getbundle.js",
+    "src/fusion",
+    "src/fusion/_vendor/veeva-library.js",
+    "webpack.config.js",
+    ".eslintrc.js"
+  ],
+  "removed": [
+    "lib/@webcomponents/shadycss",
+    "lib/@webcomponents/webcomponentsjs/bundles",
+    "lib/@webcomponents/webcomponentsjs/custom-elements-es5-adapter.js",
+    "lib/@webcomponents/webcomponentsjs/entrypoints",
+    "lib/@webcomponents/webcomponentsjs/package.json",
+    "lib/@webcomponents/webcomponentsjs/README.mds",
+    "lib/@webcomponents/webcomponentsjs/webcomponents-bundle.js",
+    "lib/@webcomponents/webcomponentsjs/webcomponents-bundle.js.map",
+    "src/fusion/slide/presentation",
+    "src/fusion/monitoring.js",
+    "src/fusion/mixins/vertical-align-observable.js",
+    "src/fusion/services/fusion-aligner.js",
+    "src/fusion/props"
+  ],
+  "added": [
+    ".babelrc",
+    ".eslintignore",
+    ".eslintrc.js",
+    "lib/ui",
+    "src/mixins",
+    "src/scripts",
+    "src/vendor",
+    "src/design-styles.json"
+  ],
+  "moved": [
+    {
+      "from": "src/fusion/static/analytics.json",
+      "to": "src/data/analytics.json"
+    },
+    {
+      "from": "src/fusion/static/references.json",
+      "to": "src/data/references.json"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Component Demo</title>
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+  <link href="../../../dist/main.css" rel="stylesheet"> <!-- load the webcomponents loader, which injects the necessary polyfill bundle -->
+  <script src="../../../lib/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
+</head>
+
+<body> <fusion-state-container id="demo" duration="500" effect="slide-right" background-color="rgba(200, 200, 200, 1)" text-color="rgba(255, 0, 0, 1)" width="400" height="400">
+    <h2>References</h2>
+    <ul>
+      <li>Test text 1</li>
+      <li>Test text 2</li>
+      <li>Test text 3</li>
+      <li>Test text 4</li>
+      <li>Test text 5</li>
+    </ul>
+  </fusion-state-container>
+  <script src="../../../dist/main.js"></script>
+  <script>
+    Fusion.toggleState('UI-demo');
+  </script>
+</body>
+
+</html>

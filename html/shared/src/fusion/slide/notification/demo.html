@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Double Header Demo</title>
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+  <link href="../../../dist/main.css" rel="stylesheet">
+  <style media="screen">
+    .action-msg {
+      opacity: 1;
+      transition: 1s;
+    }
+
+    .fusionState-note .action-msg {
+      opacity: 0;
+    }
+  </style> <!-- load the webcomponents loader, which injects the necessary polyfill bundle -->
+  <script src="../../../lib/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
+</head>
+
+<body> <fusion-element top="45" left="90" class="action-msg">
+    <p>Click anywhere to open notification</p>
+  </fusion-element> <fusion-notification id="note" position="bottom-stretch" duration="4000">
+    <div> <b>References</b><br>
+      <ol>
+        <li>Bartlett et.al. Oct 2017 - Comparison with Placebo</li>
+        <li>Howaizi, Doub. 2011 - New effective drug</li>
+      </ol>
+    </div>
+  </fusion-notification> <fusion-action if="click" do="$toggleState fusionState-note"></fusion-action>
+  <script src="../../../dist/main.js"></script>
+</body>
+
+</html>

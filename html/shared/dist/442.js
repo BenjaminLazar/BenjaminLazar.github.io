@@ -1,0 +1,1 @@
+(self.webpackChunkbasic_shared_resource=self.webpackChunkbasic_shared_resource||[]).push([[442],{1442:()=>{}}]);

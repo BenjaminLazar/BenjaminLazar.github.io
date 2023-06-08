@@ -1,0 +1,19 @@
+{
+  "ignored": [
+    "*.html",
+    "*.json",
+    "src/fusion/builder/*"
+  ],
+  "changed": [],
+  "removed": [],
+  "added": [
+    "src/fusion/static"
+  ],
+  "moved": [],
+  "forCDN": [
+    {
+      "repoPath": "lib/@webcomponents/webcomponentsjs",
+      "cdnPath": "webcomponentsjs"
+    }
+  ]
+}

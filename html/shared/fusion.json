@@ -1,0 +1,37 @@
+{
+  "ie": false,
+  "type": "slide",
+  "excludedComponents": {
+    "fusion": {
+      "slide": [
+        "fusion-arrow-popup",
+        "fusion-arrow-popup-overlay",
+        "fusion-infotab",
+        "fusion-audio-player",
+        "fusion-chart-data",
+        "fusion-chart",
+        "fusion-form",
+        "fusion-notification",
+        "fusion-paint",
+        "fusion-scroll",
+        "fusion-sortable-list",
+        "fusion-submit-email",
+        "fusion-top-menu"
+      ],
+      "email": []
+    },
+    "customComponents": {
+      "slide": ["product-logo", "document-footer"],
+      "email": []
+    }
+  },
+  "deprecatedComponents": {
+    "fusion-chart": "1.11.0",
+    "fusion-chart-data": "1.11.0",
+    "fusion-notification": "1.11.0",
+    "fusion-form": "1.11.0",
+    "fusion-top-menu": "1.11.0",
+    "fusion-presentation": "1.11.0",
+    "fusion-custom-popup-overlay": "1.11.0"
+  }
+}

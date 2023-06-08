@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Component Demo</title>
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+  <link href="../../../../dist/main.css" rel="stylesheet"> <!-- load the webcomponents loader, which injects the necessary polyfill bundle -->
+  <script src="../../../../lib/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
+</head>
+
+<body><fusion-arrow-popup id="fusionArrowPopup" backdrop="true" width="1024px" height="768px" content-width="400px" content-height="400px" backdrop-color="rgba(0, 0, 0, 0.5)" background-color="rgba(230, 0, 0, 0.5)" border-width="10px" border-style="solid" border-color="rgba(255, 255, 255, 0.05)" border-radius="20px" arrow-position="top-center">
+    <ol>
+      <li>Test reference 1</li>
+      <li>Test reference 2</li>
+      <li>Test reference 3</li>
+      <li>Test reference 4</li>
+    </ol>
+  </fusion-arrow-popup>
+  <script src="../../../../dist/main.js"></script>
+  <script>
+    Fusion.toggleState('PopupList-fusionArrowPopup');
+  </script>
+</body>
+
+</html>

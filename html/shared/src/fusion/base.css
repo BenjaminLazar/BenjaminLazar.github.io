@@ -1,0 +1,162 @@
+@import "./static/reset.css";
+
+/* Common styles
+   ========================================================================== */
+
+/* @todo editor icons font - why we have editor stuff inside SR??? */
+@font-face {
+  font-family: 'Blackburn';
+  src:  url('https://i.icomoon.io/public/519580c173/Blackburn/Blackburn.eot?ld9nam');
+  src:  url('https://i.icomoon.io/public/519580c173/Blackburn/Blackburn.eot?ld9nam#iefix') format('embedded-opentype'),
+  url('https://i.icomoon.io/public/519580c173/Blackburn/Blackburn.woff2?ld9nam') format('woff2'),
+  url('https://i.icomoon.io/public/519580c173/Blackburn/Blackburn.ttf?ld9nam') format('truetype'),
+  url('https://i.icomoon.io/public/519580c173/Blackburn/Blackburn.woff?ld9nam') format('woff'),
+  url('https://i.icomoon.io/public/519580c173/Blackburn/Blackburn.svg?ld9nam#Blackburn') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+* {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+[data-mo-type="slide"],
+[data-mo-type="brief"] {
+  font-family: Helvetica, Arial, sans-serif;
+  width: 100%;
+  height: 100%;
+  /* @todo make overflow dependent on document type - slide = hidden */
+  /* overflow: hidden; */
+  /* for correct view of body bg-image*/
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.slide {
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+
+/* Animation Effects */
+.act-appear,
+.act-fragment {
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.act-appear.animated,
+.act-fragment.activated {
+  opacity: 1;
+}
+
+html:not(.mo-is-edit) [style-opacity="0"] {
+  pointer-events: none;
+}
+
+.light {
+  --mdc-theme-on-primary: black;
+  --mdc-theme-primary: white;
+  --mdc-theme-on-secondary: black;
+  --mdc-theme-secondary: white;
+}
+
+.slideFromLeft {
+  transform: translate3d(-100vw, 0, 0);
+}
+.slideFromRight {
+  transform: translate3d(100vw, 0, 0);
+}
+.slideFromBottom {
+  transform: translate3d(0, 100vh, 0);
+}
+.slideFromTop {
+  transform: translate3d(0, -100vh, 0);
+}
+.fadeFromHidden, .faded {
+  opacity: 0;
+}
+
+fusion-slide {
+  /* Before render of component, element has display: inline style */
+  display: block;
+}
+
+fusion-slide,
+.slide {
+  opacity: 0;
+  pointer-events: none;
+}
+
+fusion-slide[data-show-content],
+.slide[data-show-content] {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+h1, h2, h3, h4 {
+  font-size: 100%;
+}
+
+ol, ul {
+  padding-left: 40px;
+}
+
+/* Outline content areas in edit mode */
+html.mo-is-edit content-area {
+  outline: 1px dashed rgba(0, 0, 0, 0.5);
+}
+
+html.mo-is-edit .animated {
+  animation-duration: 0s;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+[data-mo-responsive-content="true"] {
+  position: unset !important;
+  transform: none !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+/* for correct scaling in case missed size attr*/
+article.slide {
+  width: 1024px;
+  height: 768px;
+}
+/* for correct displaying bg image on big Ipads - old slides*/
+body[data-mo-type="slide"] {
+  background-size: contain !important;
+}
+
+/* for correct generation of pdf report each animation will have last state*/
+[data-mo-immediate-animation="true"] * {
+  transition: none !important;
+  animation-duration: 0s !important;
+  animation-delay: 0s !important;
+  animation-fill-mode: forwards !important; 
+}
+
+/* veeva desktop overwrites inline styles of content-scaler*/
+[data-mo-veeva-desktop-app="true"] {
+  width: 1024px !important;
+  height: 768px !important;
+  top: 50% !important;
+  left: 50% !important;
+}
+
+/* for prevent action if it is not edit mode */
+html.mo-is-note .has-actions {
+  pointer-events: none;
+}
+/* for change cursor if it is not edit and note mode */
+html:not(.mo-is-note):not(.mo-is-edit) .has-actions,
+html:not(.mo-is-note):not(.mo-is-edit) .has-actions > * {
+  cursor: pointer;
+}

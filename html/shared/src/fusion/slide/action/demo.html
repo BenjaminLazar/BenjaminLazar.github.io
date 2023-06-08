@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Component Demo</title>
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+  <link href="../../../../dist/main.css" rel="stylesheet"> <!-- load the webcomponents loader, which injects the necessary polyfill bundle -->
+  <script src="../../../../lib/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
+</head>
+
+<body><fusion-arrow-popup id="fusionArrowPopup" style="top:0px;left:50px;">
+    <ol>
+      <li>Test reference 1</li>
+      <li>Test reference 2</li>
+      <li>Test reference 3</li>
+      <li>Test reference 4</li>
+    </ol>
+  </fusion-arrow-popup><fusion-infotab id="demo" style="left:-180px; position: absolute;" width="400" height="250" tab-placement="Middle" tab-position="Right" tab-height="60" tab-width="40" transition-duration="100">
+    <h3>Some example header</h3>
+    <p>Some example text</p>
+  </fusion-infotab><fusion-button width="190" height="35" round-type="Rectangular" id="openArrowPopup" custom-color="rgba(0, 221, 221, 1)" custom-text-color="rgba(200, 0, 0, 1)" style="top:100px;left:40%;">Open Arrow Popup</fusion-button><fusion-action if="click" on="#openArrowPopup" do="$setStates" state="PopupList-fusionArrowPopup"></fusion-action><fusion-button width="190" height="35" round-type="Rectangular" id="openMultiple" custom-color="rgba(0, 221, 221, 1)" custom-text-color="rgba(200, 0, 0, 1)" style="top:200px;left:40%;">Set Multiple States</fusion-button><fusion-action if="click" on="#openMultiple" do="$setStates" state="PopupList-fusionArrowPopup InfoTab-demo"></fusion-action><fusion-button width="190" height="35" round-type="Rectangular" id="reset" custom-color="rgba(0, 221, 221, 1)" custom-text-color="rgba(200, 0, 0, 1)" style="top:300px;left:40%;">Reset States</fusion-button><fusion-action if="click" on="#reset" do="$setStates" state=""></fusion-action>
+  <script src="../../../../dist/main.js"></script>
+</body>
+
+</html>
